@@ -119,9 +119,9 @@ transition: background-color 0.5s ease;
   // Den Wert auf der Seite anzeigen
   const answerElement = document.querySelector('#answer');
   if (answer === '1') {
-    answerElement.innerText = 'Sehr gut, diese Antwort ist korrekt.';
+    answerElement.innerHTML = '<b> Sehr gut, diese Antwort ist korrekt. </b>';
   } else if (answer === '2') {
-    answerElement.innerText ='Diese Antwort ist leider nicht korrekt. Richtig ist Antwort D.';
+    answerElement.innerHTML ='<b> Diese Antwort ist leider nicht korrekt. Richtig ist Antwort D. </b>';
   } 
 </script>
 
