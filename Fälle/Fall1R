@@ -72,12 +72,11 @@ transition: background-color 0.5s ease;
  <img src="rp logo snip.PNG" style="width: 100%;
     position: relative;
     left: 1%; top: 1%;">
- <img src="Bilder/hessenloewe_blau.png" style="width: 100%;
+<img src="Bilder/hessenloewe_blau.png" style="width: 100%;
     position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);">
-
 </td>
 
 <!-- Zeile 1, Spalte 2 -->
@@ -160,13 +159,6 @@ transition: background-color 0.5s ease;
     bei einem Wechsel von einem anderen öffentlichen Arbeitgeber.
 </div>
 
-
-<div style="margin-top: 2%; 
-    width: 10%; margin-left: 0%; 
-    padding-left: 0px; 
-    position: relative; left:45%; top: 0%;">'.
-    buttonToPage('Fall 2', 'Weiter').
-'</div>
 
 <!-- Zeile 1, Spalte 4 -->
 <td style="height: 91.4vh; width: 8%; position: fixed; left: 91.83%;
