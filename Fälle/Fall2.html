@@ -126,12 +126,11 @@ background-image:url(dienstgebaeude_lpp.jpg);
     font-size: clamp(8px, 1vw, 15px); 
     padding-top: 2.25%;background-color: #EEEEEE;">
 
-<h1> Fallbeispiel 1 </h1>
-    Die Beamtin Lena Meyer ist schwanger. Als vorraussichtlicher 
-    Geburtstermin wurde der 18.05.2023 von der Ärztin errechnet. Anders als zuvor 
-    vorausgesagt, wurde Frau Meyers Tochter Emily aber ein paar Tage früher geboren, 
-    nämlich am 12.05.2023. Sie bekommen nun den Auftrag zu prüfen, wann 
-    Frau Meyer ihren Dienst in der Behörde wieder antreten darf.
+<h1> Fallbeispiel 2 </h1>
+    Frau Müller (geb. am 23.07.1975) war in der Zeit von 01.01.2009 
+    bis 30.04.2009 befristet bei der Stadt Wetzlar beschäftigt. 
+    Seit dem 01.06.2012 ist sie unbefristet beim Regierungspräsidium 
+    Gießen als Beschäftigte eingestellt worden.
 
 <br>
 <br>
@@ -140,25 +139,25 @@ background-image:url(dienstgebaeude_lpp.jpg);
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="berlin"  onclick="Fall2='1'" name="answer" value="berlin">
-        Berlin
+        <input type="radio" id="berlin"  onclick="Fall2='1'" name="answer" value="010134">
+       Frau Müller begeht ihr 25jähriges Dienstjubiläum am 01.01.2034
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="wien" onclick="Fall2='2'" name="answer" value="wien">
-        Wien
+        <input type="radio" id="wien" onclick="Fall2='2'" name="answer" value="010637">
+        Frau Müller begeht ihr 25jähriges Dienstjubiläum am 01.06.2037
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="paris" onclick="Fall2='3'" name="answer" value="paris">
-        Paris
+        <input type="radio" id="paris" onclick="Fall2='3'" name="answer" value="010237">
+        Frau Müller begeht ihr 25jähriges Dienstjubiläum am 01.02.2037
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="madrid" onclick="Fall2='4'" name="answer" value="madrid">
-       Madrid
+        <input type="radio" id="madrid" onclick="Fall2='4'" name="answer" value="011034">
+       Frau Müller begeht ihr 25jähriges Dienstjubiläum am 01.10.2034
       </div>
     
   </div>
@@ -172,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
       const answerValue = this.querySelector('input').value;
-if (answerValue === 'berlin') {
+if (answerValue === '010237') {
           window.location.href = 'eigen5.2.html?answer=' + answerValue;
         } else  {
           window.location.href = 'eigen5.23.html?answer=' + answerValue;}
