@@ -107,11 +107,15 @@ transition: background-color 0.5s ease;
     padding-top: 2.25%;background-color: #EEEEEE;">
  <h1> Lösung des Falls </h1>
     <div id="answer"> </div>
-    Wie aus § 34 Absatz 3 ersichtlich 
-    wird, kann auch die befristete Anstellung bei der Stadt Wetzlar für die 
-    Beschäftigungszeit angerechnet werden. Alle Beschäftigten öffentlicher Arbeitgeber des Landes Hessen werden durch den
-    Tarifvertrag erfasst, so auch die Beschäftigten der Stadt Wetzlar und des Regierungspräsidiums 
-    Gießen. Daher ergibt sich der 01.02.2037 als Tag für das 25-jährige Dienstjubiläum.
+    Lisa ist zum Zeitpunkt des Urlaubs 
+    18 Jahre alt und hat daher 25 Tage Urlaub zur Verfügung. Für die 5 Monate, 
+    die Sie bereits in der Behörde beschäftigt war, stehen ihr also 5 Zwölftel 
+    der 25 Tage zu. Daraus ergeben sich 10,42 Tage Urlaub. Da der Bruchteil des 
+    Urlaubsanspruchs weniger als einen halben Tag beträgt, hat Lisa nur 10 statt 
+    der benötigten 11 Tage Urlaub. Für Julia erfolgt die Berechnung äquivalent, 
+    allerdings hat sie 27 Tage Urlaubsanspruch pro Jahr, da Sie erst 17 Jahre alt 
+    ist. Für die bereits erfolgte Beschäftigungszeit hat sie also 11 Tage Urlaub 
+    zur Verfügung.
 
  
 <script>
@@ -122,9 +126,9 @@ transition: background-color 0.5s ease;
   // Den Wert auf der Seite anzeigen
   const answerElement = document.querySelector('#answer');
   if (answer === '1') {
-    answerElement.innerHTML = '<b> Sehr gut, Sie haben die korrekte Antwort ausgewählt. </b>';
+    answerElement.innerHTML = '<b> Sehr gut, diese Antwort ist richtig. </b>';
   } else if (answer === '2') {
-    answerElement.innerHTML ='<b> Diese Antwort ist leider nicht korrekt. Die richtige Antwort ist C. </b>';
+    answerElement.innerHTML ='<b> Diese Antwort ist leider falsch. Die richtige Antwort ist C. </b>';
   } 
 </script>
 
