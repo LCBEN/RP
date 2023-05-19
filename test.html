@@ -54,6 +54,37 @@ border-spacing: 0px;
 .Familie img:hover {
    opacity:1;  border: 1.5px solid; border-color:#244897;
 }
+   .container {
+        width: 90%; padding-left: 5%; padding-top: 3%; z-index:0;
+        position: relative;}
+
+    .container img { 
+        width: 90%, height: auto}
+
+    .container .btn {
+        position: absolute; 
+        background-color: #E2EAFC; color: #244897; z-index:1;
+        top: 28%; left: 50%; text-align: center;
+        padding-left: 0.1%; padding-right: 0.1%;
+        padding-top: 0.1%; padding-bottom:0.1%;
+        font-size: clamp(3px, 1vw, 16px);
+        width: 17%; height: 2.3vw; line-height: 2.3vw; min-width: 0px;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transition-duration: 0.4s;}
+.container .btn:hover {background-color: #B8CAF0;
+}
+a.class1:link {
+  text-decoration: underline;
+}
+
+a.class1:visited {
+  text-decoration: underline;
+}
+
+a.class1:hover {
+  font-weight: bold ;
+}
   </style>
 </head>
 <body>
@@ -167,33 +198,9 @@ alt="Gütesiegel Familienfreundlicher Arbeitgeber" /></a>
 <br>
 <br>
 <br>
-<div class="question">
-  <div class="answer-grid">
-    
-      <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="answer" value="1">
-       <b> A</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 13.07.2023
-      </div>
-    
-    
-      <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="answer" value="2">
-      <b> B</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 06.07.2023
-      </div>
-    
-  
-      <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="answer" value="2">
-        <b> C</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 18.07.2023
-      </div>
-    
-      <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="answer" value="2">
-       <b> D</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 12.07.2023
-      </div>
-    
-  </div>
-</div>
+
+<div class="container">
+    <img src="Mittelhessen_blau2.png" style="width:100%">');
 
 <script>
   var answer;
@@ -215,29 +222,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <br>
 <br>
 <br>
-
-
-<!-- Gesetzesgrundlage-->
-<br> <div style="width: 94%;  padding-left: 3%;
-    padding-right: 3%; border: 1px solid; border-color: #244897;
-    font-size: clamp(8px, 1vw, 15px); padding-bottom: 2%;
-    background-image:url(../Bilder/grauWaage.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 1%;background-color: white;">
-
-<h2> Gesetz zum Schutz von Müttern bei der Arbeit, in der Ausbildung und 
-im Studium (Mutterschutzgesetz – MuSchG) </h2> <br><br>
-<b> § 3 Schutzfristen vor und nach der Entbindung </b> <br><br>
-(1) Der Arbeitgeber darf eine schwangere Frau in den 
-letzten sechs Wochen vor der Entbindung nicht beschäftigen 
-(Schutzfrist vor der Entbindung), soweit sie sich nicht zur Arbeitsleistung ausdrücklich bereit erklärt. Sie kann die Erklärung nach Satz 1 jederzeit mit Wirkung für die Zukunft widerrufen. Für die Berechnung der Schutzfrist vor der Entbindung ist der voraussichtliche Tag der Entbindung maßgeblich, wie er sich aus dem ärztlichen Zeugnis oder dem Zeugnis einer Hebamme oder eines Entbindungspflegers ergibt. Entbindet eine Frau nicht am voraussichtlichen Tag, verkürzt oder verlängert sich die Schutzfrist vor der Entbindung entsprechend.
-<br> <br>
-(2) Der Arbeitgeber darf eine Frau bis zum Ablauf von acht Wochen nach der Entbindung nicht beschäftigen (Schutzfrist nach der Entbindung). 
-Bei vorzeitiger Entbindung verlängert sich die Schutzfrist nach der Entbindung nach Satz 1 oder nach Satz 2 um den Zeitraum der Verkürzung der Schutzfrist vor der Entbindung nach Absatz 1 Satz 4. 
- </div>
-
 <!-- Zeile 1, Spalte 4 -->
 <td style="height: 91.4vh; width: 8%; position: fixed; top:0%; left: 91.83%;
     border-bottom: 1px solid; border-color: #244897;
