@@ -124,44 +124,9 @@ console.log(answer);
 <br>
 <br>
  
-<div class="question">
-  <div class="answer-grid">
-    
-      <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="answer" value="4">
-       <b> A</b>: Ich gehe aktiv auf die Gruppe zu und stelle mich kurz vor. Dann beteilige ich mich an dem Gespräch. Schnell werde ich mit den anderen warm.
-      </div>
-    
-    
-      <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="answer" value="3">
-      <b> B</b>: Ich gehe in den Raum, setze mich auf einen Platz direkt neben einer anderen Person und beginne ein Gespräch
-      </div>
-    
-  
-      <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="answer" value="2">
-        <b> C</b>: Ich stelle mich in die Gruppe oder setze mich neben eine andere Person und warte darauf, dass jemand mich in ein Gespräch einbezieht
-      </div>
-    
-      <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="answer" value="1">
-       <b> D</b>:  Ich suche mir einen einzelnen Platz und warte darauf, dass sich jemand zu mir setzt. 
-      </div>
-    
-  </div>
-</div>
 
 <script>
-  var answer;
-
-document.addEventListener('DOMContentLoaded', function() {
-  const answerTiles = document.querySelectorAll('.answer-tile');
-  answerTiles.forEach(function(tile) {
-    tile.addEventListener('click', function() {
-      const answerValue = this.querySelector('input').value;
-
-          window.location.href = 'Fall1Lösung.html?answer=' + answerValue;
+ console.log(antwort1);
         }); 
       
     });
