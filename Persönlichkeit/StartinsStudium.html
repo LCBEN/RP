@@ -152,24 +152,15 @@ console.log(answer);
   </div>
 
 <script>
-var Pers1 = document.getElementsByName('Pers1');
-for (var i = 0; i < antworten.length; i++) {
-  antworten[i].addEventListener('change', function() {
-    gesamtExtra += parseInt(this.value); 
+
+ var Pers1 = document.getElementsByName('Pers1');
+for (var i = 0; i < Pers1.length; i++) {
+  Pers1[i].addEventListener('change', function() {
+    var selectedAnswer = this.value;
+    var nextPageUrl = 'TestJS.html?antwort=' + selectedAnswer;
+    window.location.href = TestJS.html;
   });
 }
-document.addEventListener('DOMContentLoaded', function() {
-  const answerTiles = document.querySelectorAll('.answer-tile');
-  answerTiles.forEach(function(tile) {
-    tile.addEventListener('click', function() {
-      const answerValue = this.querySelector('input').value;
-
-          window.location.href = 'TestJS.html?answer=' + answerValue;
-       }); 
-      
-    });
- 
-});
 </script>
  </div>
 
