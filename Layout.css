@@ -10,7 +10,21 @@ border-spacing: 0px;
       font-size: 2em;
       margin-bottom: 20px;
     }
-    
+  
+
+.spalte1 {
+  height: 91.4vh;
+  width: 23.51%;
+ max.width: 450px;
+  position: fixed;
+  top: 0%;
+  left: 23.51%;
+  border-bottom: 1px solid;
+  border-color: #244897;
+  border-spacing: 0px;
+  background-color: #244897;
+}
+
 .question {
   margin-bottom: 20px;
 }
