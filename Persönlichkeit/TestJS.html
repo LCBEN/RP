@@ -135,8 +135,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Verwende den Wert der ausgewählten Antwort
     console.log('Ausgewählte Antwort:', answerValue);
     // Füge den Code hier hinzu, um basierend auf der Antwort etwas zu tun
+   const answerElement = document.getElementById('answerValue');
+    answerElement.textContent = answerValue;
   }
 });
+  
         
 </script>
  </div>
