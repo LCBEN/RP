@@ -1,0 +1,41 @@
+ <style>
+    body {
+      background-color: white;
+margin:0px;
+      font-family: Arial, sans-serif;
+border-spacing: 0px;
+    }
+    h1 {
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    
+.question {
+  margin-bottom: 20px;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.answer-tile {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  cursor: default;
+}
+
+.answer-tile:hover {
+  background-color: #e0e0e0;
+}
+
+.answer-tile input[type="radio"] {
+  display: none; text-align: left;
+}
+
+  </style>
