@@ -128,7 +128,7 @@ background-image:url(dienstgebaeude_lpp.jpg);
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Abrufen des Werts aus dem Local Storage
-  const answerValue = localStorage.getItem('selectedAnswer');
+  const answerValue = sessionStorage.getItem('selectedAnswer');
 
   // Überprüfen, ob ein Wert gefunden wurde
   if (answerValue) {
