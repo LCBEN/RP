@@ -155,10 +155,16 @@ console.log(answer);
 var Pers1 = document.getElementsByName('Pers1');
 for (var i = 0; i < antworten.length; i++) {
   antworten[i].addEventListener('change', function() {
-    gesamtExtra += parseInt(this.value); window.location.href = 'TestJS.html';
+    gesamtExtra += parseInt(this.value); 
   });
 }
-        
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const answerValue = this.querySelector('input').value;
+
+          window.location.href = 'TestJS.html?answer=' + answerValue;        
 </script>
  </div>
 
