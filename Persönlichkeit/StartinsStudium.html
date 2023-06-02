@@ -152,12 +152,13 @@ console.log(answer);
   </div>
 
 <script>
-document.getElementById("gesamtwert").innerHTML = gesamtwert;
-        }); 
-      
-    });
- 
-});
+var Pers1 = document.getElementsByName('Pers1');
+for (var i = 0; i < antworten.length; i++) {
+  antworten[i].addEventListener('change', function() {
+    gesamtExtra += parseInt(this.value);
+  });
+}
+        
 </script>
  </div>
 
