@@ -126,12 +126,11 @@ background-image:url(dienstgebaeude_lpp.jpg);
  <p>Der Gesamtwert ist: <span id="answerValue"></span></p>
 
 <script>
-document.gedocument.addEventListener('DOMContentLoaded', function() {
-  // Extrahiere den Wert des Query-Parameters "answer" aus der URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const answerValue = urlParams.get('answer');
+document.addEventListener('DOMContentLoaded', function() {
+  // Abrufen des Werts aus dem Local Storage
+  const answerValue = localStorage.getItem('selectedAnswer');
 
-  // Überprüfe, ob ein Wert gefunden wurde
+  // Überprüfen, ob ein Wert gefunden wurde
   if (answerValue) {
     // Verwende den Wert der ausgewählten Antwort
     console.log('Ausgewählte Antwort:', answerValue);
