@@ -158,16 +158,14 @@ document.addEventListener('DOMContentLoaded', function() {
     tile.addEventListener('click', function() {
       const answerValue = this.querySelector('input').value;
 
-      // Erstelle eine Variable auf Basis der ausgewählten Antwort
-      // Du kannst den Namen und den Wert entsprechend anpassen
-      window.selectedAnswer = answerValue;
+      // Speichern des Werts im Local Storage
+      localStorage.setItem('selectedAnswer', answerValue);
 
-      // Leite zur nächsten Seite weiter
-      window.location.href = 'TestJS.html?answer=' + answerValue;
+      // Weiterleiten zur nächsten Seite
+      window.location.href = 'TestJS.html';
     });
   });
 });
-
 </script>
  </div>
 
