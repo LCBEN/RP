@@ -126,7 +126,18 @@ background-image:url(dienstgebaeude_lpp.jpg);
 
 
 <script>
-document.getElementById('ergebnis').textContent = 'Gesamtwert: ' + gesamtExtra;
+document.gedocument.addEventListener('DOMContentLoaded', function() {
+  // Extrahiere den Wert des Query-Parameters "answer" aus der URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const answerValue = urlParams.get('answer');
+
+  // Überprüfe, ob ein Wert gefunden wurde
+  if (answerValue) {
+    // Verwende den Wert der ausgewählten Antwort
+    console.log('Ausgewählte Antwort:', answerValue);
+    // Füge den Code hier hinzu, um basierend auf der Antwort etwas zu tun
+  }
+});
         
 </script>
  </div>
