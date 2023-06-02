@@ -128,24 +128,24 @@ console.log(answer);
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="answer" value="4">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra1" value="4">
        <b> A</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 13.07.2023
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="answer" value="3">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="3">
       <b> B</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 06.07.2023
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="answer" value="2">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="2">
         <b> C</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 18.07.2023
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="answer" value="1">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="1">
        <b> D</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 12.07.2023
       </div>
     
@@ -156,10 +156,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const answerValue = this.querySelector('input').value;
+      const Extra1Value = this.querySelector('input').value;
 
       // Speichern des Werts im Local Storage
-      sessionStorage.setItem('selectedAnswer', answerValue);
+      sessionStorage.setItem('selectedAnswer', Extra1Value);
 
       // Weiterleiten zur nächsten Seite
       window.location.href = 'TestJS.html';
