@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const answerValue = this.querySelector('input').value;
 
       // Speichern des Werts im Local Storage
-      localStorage.setItem('selectedAnswer', answerValue);
+      sessionStorage.setItem('selectedAnswer', answerValue);
 
       // Weiterleiten zur nächsten Seite
       window.location.href = 'TestJS.html';
