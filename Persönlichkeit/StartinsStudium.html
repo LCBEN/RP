@@ -155,7 +155,7 @@ console.log(answer);
 var Pers1 = document.getElementsByName('Pers1');
 for (var i = 0; i < antworten.length; i++) {
   antworten[i].addEventListener('change', function() {
-    gesamtExtra += parseInt(this.value);
+    gesamtExtra += parseInt(this.value); window.location.href = 'TestJS.html';
   });
 }
         
