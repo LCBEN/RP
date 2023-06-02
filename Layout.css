@@ -27,7 +27,7 @@ border-spacing: 0px;
   height: 91.4vh;
   width: 8%;
   position: fixed;
- left: 23,51%;
+ left: 23.51%;
   top: 0%;
   border-bottom: 1px solid;
   border-color: #244897;
@@ -36,10 +36,10 @@ border-spacing: 0px;
 }
 .spalte3 {
   height: 91.4vh;
-  width: 60,305%;
+  width: 60.305%;
  overflow: auto;
   position: fixed;
- left: 31,51%;
+ left: 31.51%;
   top: 0%;
  border-top: 1px solid;
  border-left: 1px solid;
