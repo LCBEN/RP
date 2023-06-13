@@ -22,6 +22,10 @@ border-spacing: 0px;
   border-bottom: 1px solid;
   border-color: #244897;
   border-spacing: 0px;
+ overflow: hidden; /* Hinzugefügtes Attribut */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .spalte1::before {
