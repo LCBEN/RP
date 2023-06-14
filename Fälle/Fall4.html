@@ -3,42 +3,7 @@
 <head>
  <meta charset="UTF-8">
   <title>Meine Single Choice Frage</title>
-  <style>
-    body {
-      background-color: white;
-margin:0px;
-      font-family: Arial, sans-serif;
-border-spacing: 0px;
-    }
-    
-.question {
-  margin-bottom: 20px;
-}
-
-.answer-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-
-.answer-tile {
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: left;
-  cursor: default;
-}
-
-.answer-tile:hover {
-  background-color: #e0e0e0;
-}
-
-.answer-tile input[type="radio"] {
-  display: none; text-align: left;
-}
-
-  </style>
+ <link rel="stylesheet" href="../Layout.css">
 </head>
 <body>
 
@@ -46,57 +11,29 @@ border-spacing: 0px;
 <table style="width:100%; border-spacing: 0px;">
 
 <!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
 
-<tr>
-    
-<!-- Zeile 1, Spalte 1 -->
-<td style="height: 91.4vh; width: 23.51%; max-width: 450px; 
-    position: fixed; top: 0px; left: 0px;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid; border-color: #244897;
-    border-spacing: 0px;
-    background-size: 69% auto;
-    background-position: 40% 40%;;
-    background-color: white;">
- <img src="rp logo snip.PNG" style="width: 100%;
-    position: relative;
-    left: 1%; top: 1%;">
- <img src="../Bilder/hessenloewe_blau.png" style="width: 100%;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);">
-</td>
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
 
-<!-- Zeile 1, Spalte 2 -->
-<td style="height: 91.4vh; width: 8%; position: fixed; top:0%; left: 23.51%;
-    border-bottom: 1px solid; border-color: #244897;
-    border-spacing: 0px; background-color: #244897;  
-background-image:url(dienstgebaeude_lpp.jpg);
- background-size:cover;
-    background-attachment: local;">
-</td>
-
-
-<!-- Zeile 1, Spalte 3 = Hintergrund -->
-<td style="height:91.4vh; width: 60.305%; overflow: auto; 
-    border-spacing:0px; position: fixed; top:0%; left: 31.51%;
-    border-top: 1px solid; border-left: 1px solid; background-color: #EEEEEE;
-    border-color: #244897;"> 
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
 
 <!-- Inhalt-->
-<div style="width:100%; height: 1300px;  overflow: auto; background-attachment: local;
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
     vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
     border-spacing:0px; 
     background-color: #EEEEEE;
-    position: static;
-    margin:0px 0px 0px 0%;">
-
-<!-- Text-->
-<div style=" height:clamp(100px, 63.4vw, 314px);  padding-left: 3%;
-    padding-right: 3%;
+    font-family: Arial, san-serif;
     font-size: clamp(8px, 1vw, 15px); 
-    padding-top: 2.25%;background-color: #EEEEEE;">
+    position: relative;">
 
 <h1> Fallbeispiel 4 </h1>
     Sie bekommen einen Anruf einer Unternehmensvertreterin, die wissen möchte, 
@@ -325,14 +262,9 @@ Von der Berücksichtigung des Zuschlags kann abgesehen werden, soweit dies wegen
 </div>
 
 <!-- Zeile 1, Spalte 4 -->
-<td style="height: 91.4vh; width: 8%; position: fixed; top:0%; left: 91.83%;
-    border-bottom: 1px solid; border-color: #244897;
-    border-spacing: 0px; background-color: #244897; border-right: 1px solid; border-color: #244897;
-background-image:url(dienstgebaeude_lpp.jpg);
-    background-size:cover;
-background-attachment: local;">
+<td class="spalte4">
 </td>
  
-</div> </tr>');
+</div> </tr>
 </body>
 </html
