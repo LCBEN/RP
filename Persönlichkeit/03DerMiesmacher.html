@@ -69,7 +69,7 @@
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr" value="1">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr1" value="1">
         <b> C</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 18.07.2023
       </div>
     
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Extra1Value = this.querySelector('input').value;
+      const Vertr1Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
       sessionStorage.setItem('selectedAnswer', Vertr1Value);
