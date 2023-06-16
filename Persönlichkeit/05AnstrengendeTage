@@ -57,13 +57,13 @@
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr2" value="1">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr2" value="2">
        <b> A</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 13.07.2023
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr2" value="2">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr2" value="4">
       <b> B</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 06.07.2023
       </div>
     
@@ -74,7 +74,7 @@
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr2" value="4">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr2" value="1">
        <b> D</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 12.07.2023
       </div>
     
@@ -85,10 +85,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Vertr2Value = this.querySelector('input').value;
+      const Gewiss2Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Vertr2Value);
+      sessionStorage.setItem('selectedAnswer', Gewiss2Value);
 
       // Weiterleiten zur nächsten Seite
       window.location.href = '06DieAbsprachen.html';
