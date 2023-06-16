@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Meine Single Choice Frage</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Start ins Studium... </h1>
+  Sie befinden sich in der Einführungswoche des Studiums, die von den Dozentinnen und Dozenten der Hochschule organisiert wird. 
+  Am ersten Tag sind Sie zunächst zusammen mit Ihrem gesamten Jahrgang unterwegs - etwa 50 Studierenden. 
+  Später werden Sie in zwei Gruppen bzw. Klassen aufgeteilt, die so bis zum Ende des Semesters bestehen bleiben werden. 
+  Die Dozentinnen und Dozenten stellen sich selbst und Ihren Fachbereich vor und es werden die vielfältigen Möglichkeiten und Aufgaben präsentiert, 
+  die man durch das duale Studium wahrnhemen kann. Außerdem werden Sie die anderen Studierenden aus Ihrer Klasse besser kennenlernen. 
+  Mal durch mehr, mal durch weniger kreative Kennenlernspiele. Ein Rundgang über den Campus und ein Abstecher in die Bibliothek dürfen natürlich auch nicht fehlen.
+
+<br>
+<br>
+<br>
+ 
+ Am Morgen des ersten Tages machen Sie sich auf den Weg zum Campus, um an der ersten Informationsverantaltung für den kompletten Jahrgang teilzunehmen. 
+ Vor dem Raum haben sich einige Studierende zusammengefunden, die bereits in ein Gespräch vertieft sind. Im Raum sitzen ebenfalls schon vereinzelt Personen.
+
+<br>
+<br>
+<br>
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr1" value="4">
+       <b> A</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 13.07.2023
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr1" value="2">
+      <b> B</b>: Der letzte Tag der Schutzfrist für Frau Meyer ist der 06.07.2023
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr" value="1">
+        <b> C</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 18.07.2023
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr1" value="3">
+       <b> D</b>:  Der letzte Tag der Schutzfrist für Frau Meyer ist der 12.07.2023
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Extra1Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Vertr1Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = 'Werwillvorstellen.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>;
+</body>
+</html
