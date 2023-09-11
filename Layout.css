@@ -129,6 +129,8 @@ border-spacing: 0px;
 
 .panel {
     padding-left: 1.5%;
+ padding-top: 1%;
+ padding-bottom: 1%;
  border: 1px solid;
  border-color: #ccc;
  display: none;
