@@ -128,7 +128,7 @@ border-spacing: 0px;
 }
 
 .panel {
-    padding: 2px 18px;
+    padding-left: 5%;
  width:95%;
  border: 1px solid;
  border-color: red;
