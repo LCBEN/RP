@@ -78,22 +78,8 @@
 <br>
 <br>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const answerTiles = document.querySelectorAll('.answer-tile');
-  answerTiles.forEach(function(tile) {
-    tile.addEventListener('click', function() {
-      const Vertr3Value = this.querySelector('input').value;
-
-      // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Vertr3Value);
-
-      // Weiterleiten zur nächsten Seite
-      window.location.href = 'Semester1.html';
-    });
-  });
-});
-</script>
+ <button onclick="window.location.href = 'Fall5.html';"; style="width: 15%; background-color: #244897; color: white; font-weight: bold; 
+    font-size: clamp(8px, 1vw, 15px); padding: 1%; display: block; margin: 0 auto; border: 1px solid; border-color: black; ">Weiter</button>
  </div>
 
 <!-- Zeile 1, Spalte 4 -->
