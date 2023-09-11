@@ -110,7 +110,7 @@ border-spacing: 0px;
 }
 
 .accordion {
-    background-color: #B8CAF0;
+    background-color: #f4f4f4;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -123,7 +123,7 @@ border-spacing: 0px;
 
 .active,
 .accordion:hover {
-    background-color: #ccc;
+    background-color: #e0e0e0;
 }
 
 .panel {
