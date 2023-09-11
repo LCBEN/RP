@@ -113,7 +113,7 @@ border-spacing: 0px;
 .accordion {
     background-color: #e0e0e0;
     cursor: pointer;
-    padding: 18px;
+    padding: 1%;
     width: 100%;
   font-size: 2em;
     text-align: left;
