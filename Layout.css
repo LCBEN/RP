@@ -130,7 +130,7 @@ border-spacing: 0px;
 .panel {
     padding-left: 1.5%;
  border: 1px solid;
- border-color: red;
+ border-color: #ccc;
  display: none;
     background-color: #EEEEEE;
     overflow: hidden;
