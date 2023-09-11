@@ -116,7 +116,8 @@ border-spacing: 0px;
     padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
+    border: 1px solid;
+ border-color: #244897;
     outline: none;
     transition: 0.4s;
 }
