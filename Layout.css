@@ -94,7 +94,8 @@ border-spacing: 0px;
 
 .answer-tile {
   background-color: #f4f4f4;
-  border: 1px solid #ccc;
+  border: 1px solid;
+   border-color: #ccc;
   border-radius: 5px;
   padding: 10px;
   text-align: left;
