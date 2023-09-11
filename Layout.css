@@ -112,13 +112,13 @@ border-spacing: 0px;
 
 .accordion {
     background-color: #f4f4f4;
-    color: #244897;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
     border: 1px solid;
- border-color: #244897;
+ border-color: #ccc;
     outline: none;
     transition: 0.4s;
 }
@@ -132,7 +132,7 @@ border-spacing: 0px;
     padding: 0 18px;
  width:100%;
     display: none;
-    background-color: grey;
+    background-color: #EEEEEE;
     overflow: hidden;
 }
 
