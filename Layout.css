@@ -128,12 +128,11 @@ border-spacing: 0px;
 }
 
 .panel {
-    padding: 0 18px;
- width:100%;
+    padding: 2 5%;
+ width:95%;
  border: 1px solid;
  border-color: red;
  display: none;
-  outline: none;
     background-color: #EEEEEE;
     overflow: hidden;
 }
