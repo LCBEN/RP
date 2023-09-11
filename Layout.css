@@ -132,6 +132,7 @@ border-spacing: 0px;
  width:100%;
  border: 1px solid;
  border-color: red;
+  outline: none;
     background-color: #EEEEEE;
     overflow: hidden;
 }
