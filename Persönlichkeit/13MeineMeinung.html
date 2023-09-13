@@ -35,22 +35,11 @@
     font-size: clamp(8px, 1vw, 15px); 
     position: relative;">
 
-<h1> Start ins Studium... </h1>
-  Sie befinden sich in der Einführungswoche des Studiums, die von den Dozentinnen und Dozenten der Hochschule organisiert wird. 
-  Am ersten Tag werden Sie zunächst zusammen mit Ihrem gesamten Jahrgang unterwegs sein - etwa 50 Studierenden. 
-  Später werden Sie in zwei Gruppen bzw. Klassen aufgeteilt, die so bis zum Ende des Semesters bestehen bleiben werden. 
- <br>
- <br> 
- Die Dozentinnen und Dozenten werden sich selbst und Ihren Fachbereich vorstellen sowie die vielfältigen Möglichkeiten und Aufgaben präsentieren, 
-  die man durch das duale Studium wahrnhemen kann - z.B. in den Bereichen Umweltschutz, Flüchtlingsangelegenheiten oder Arbeitsschutz. Außerdem werden Sie die anderen Studierenden aus Ihrer Klasse besser kennenlernen... 
-  Mal durch mehr, mal durch weniger kreative Kennenlernspiele. Ein Rundgang über den Campus und ein Abstecher in die Bibliothek dürfen natürlich auch nicht fehlen.
-
-<br>
-<br>
-<br>
- 
- Am Morgen des ersten Tages machen Sie sich auf den Weg zum Campus, um an der ersten Informationsverantaltung für den kompletten Jahrgang teilzunehmen. 
- Vor dem Raum haben sich einige Studierende zusammengefunden, die bereits in ein Gespräch vertieft sind. Im Raum sitzen ebenfalls schon vereinzelt Personen.
+<h1> Meine Meinung... </h1>
+  In einem Seminar bekommen Sie als Hausaufgabe über ein bestimmtes Thema,
+welches derzeit stark in den Medien diskutiert wird, nachzudenken und 
+sich eine eigene Meinung zu bilden. Am nächsten Tag soll dann eine kurze Diskussion
+im Plenum geführt werden.
 
 <br>
 <br>
@@ -59,25 +48,25 @@
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra1" value="4">
-       <b> A</b>: Ich gehe aktiv auf die Gruppe zu und stelle mich kurz vor. Dann beteilige ich mich an dem Gespräch. Schnell werde ich mit den anderen warm.
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Gewiss5" value="2">
+       <b> A</b>: Ich mache mir am Abend Gedanken darüber und notiere mir die Kernaussage, um sie nicht zu vergessen.
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="3">
-      <b> B</b>: Ich gehe in den Raum, setze mich auf einen Platz direkt neben einer anderen Person und beginne ein Gespräch.
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Gewiss5" value="3">
+      <b> B</b>: Ich lese mir den neuesten Nachrichtenbeitrag zu dem Thema durch und bilde mir daraus eine Meinung, die ich mit Inhalten aus dem Beitrag begründen kann. 
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="2">
-        <b> C</b>:  Ich stelle mich in die Gruppe oder setze mich neben eine andere Person und warte darauf, dass jemand mich in ein Gespräch einbezieht.
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Gewiss5" value="4">
+        <b> C</b>:  Ich suche nach zusätzlichen Informationen zu dem Thema und lese mir verschiedene Standpunkte durch. Dazu mache ich ein paar Notizen, um meine Meinung am nächsten Tag gut begründen zu können. 
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="1">
-       <b> D</b>:  Ich suche mir einen einzelnen Platz und warte darauf, dass sich jemand zu mir setzt. 
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Gewiss5" value="1">
+       <b> D</b>:  Ich denke mir spontan etwas aus, schließlich geht es ja um meine eigene Meinung.  
       </div>
     
   </div>
@@ -87,13 +76,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Extra1Value = this.querySelector('input').value;
+      const Gewiss5Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Extra1Value);
+      sessionStorage.setItem('selectedAnswer', Gewiss5Value);
 
       // Weiterleiten zur nächsten Seite
-      window.location.href = '02DieersteHausarbeit.html';
+      window.location.href = '14Klausurenphase.html';
     });
   });
 });
