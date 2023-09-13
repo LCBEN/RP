@@ -55,24 +55,24 @@ Lernen für die Klausur investiert hat.
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra1" value="4">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr4" value="4">
        <b> A</b>: Ich gehe auf ihn zu und frage was los ist. Ich versuche ihn aufzumuntern und biete ihm an beim nächsten Mal zusammen in einer Lerngruppe zu lernen. 
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="1">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr4" value="1">
       <b> B</b>: Ich sage ihm, dass er sich beim nächsten Mal einfach mehr anstrengen muss. Wenn er eine gute Note bekommen möchte, soll er einfach mehr Zeit zum Lernen investieren.
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="3">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr4" value="3">
         <b> C</b>:  Ich versuche den Mitstudenten so gut es geht aufzumuntern. Ich sage, dass er beim nächsten Mal bestimmt eine bessere Note schreibt, wenn er noch ein bisschen mehr Zeit zum Lernen findet.
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="2">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr4" value="2">
        <b> D</b>: Ich denke, dass er wahrscheinlich weiß, dass er sich nicht genügend angestrengt hat und jetzt darüber nachdenken wird. Ich muss ihn also nicht noch mit meinen Ratschlägen belasten. Deshalb gehe ich nach Hause. 
       </div>
     
@@ -83,10 +83,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Extra1Value = this.querySelector('input').value;
+      const Vertr4Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Extra1Value);
+      sessionStorage.setItem('selectedAnswer', Vertr4Value);
 
       // Weiterleiten zur nächsten Seite
       window.location.href = '15Semester2.html';
