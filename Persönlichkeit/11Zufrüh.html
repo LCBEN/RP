@@ -35,23 +35,15 @@
     font-size: clamp(8px, 1vw, 15px); 
     position: relative;">
 
-<h1> Start ins Studium... </h1>
-  Sie befinden sich in der Einführungswoche des Studiums, die von den Dozentinnen und Dozenten der Hochschule organisiert wird. 
-  Am ersten Tag werden Sie zunächst zusammen mit Ihrem gesamten Jahrgang unterwegs sein - etwa 50 Studierenden. 
-  Später werden Sie in zwei Gruppen bzw. Klassen aufgeteilt, die so bis zum Ende des Semesters bestehen bleiben werden. 
- <br>
- <br> 
- Die Dozentinnen und Dozenten werden sich selbst und Ihren Fachbereich vorstellen sowie die vielfältigen Möglichkeiten und Aufgaben präsentieren, 
-  die man durch das duale Studium wahrnhemen kann - z.B. in den Bereichen Umweltschutz, Flüchtlingsangelegenheiten oder Arbeitsschutz. Außerdem werden Sie die anderen Studierenden aus Ihrer Klasse besser kennenlernen... 
-  Mal durch mehr, mal durch weniger kreative Kennenlernspiele. Ein Rundgang über den Campus und ein Abstecher in die Bibliothek dürfen natürlich auch nicht fehlen.
-
-<br>
-<br>
-<br>
- 
- Am Morgen des ersten Tages machen Sie sich auf den Weg zum Campus, um an der ersten Informationsverantaltung für den kompletten Jahrgang teilzunehmen. 
- Vor dem Raum haben sich einige Studierende zusammengefunden, die bereits in ein Gespräch vertieft sind. Im Raum sitzen ebenfalls schon vereinzelt Personen.
-
+<h1> Bin ich zu früh... </h1>
+Nach dem Ende der ersten praktischen Phase sind
+Sie nun im zweiten Semester des theoretischen Teils des Studiums.
+Im Rahmen eines Seminars nehmen Sie an einer online Video-Konferenz teil. Obwohl ein sehr großer Teil der Lehre in Präsenz stattfindet, 
+gibt es ein paar Veranstaltungen die als Online-Konferenz stattfinden - zum Beispiel, wenn ein Dozent oder eine Dozentin gleichzeitig noch als Richterin/Richter im Raum Frankfurt beschäftigt ist.
+Dafür gibt es ein hochschuleigenes Videokonferenztool. Da Sie nicht zu spät kommen wollten, haben Sie sich ein paar
+Minuten früher zugeschaltet. Sie sehen, dass bisher noch
+keine anderen Studierenden da sind und nur der Dozent wartend
+vor dem Bildschirm sitzt.
 <br>
 <br>
 <br>
@@ -59,25 +51,25 @@
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra1" value="4">
-       <b> A</b>: Ich gehe aktiv auf die Gruppe zu und stelle mich kurz vor. Dann beteilige ich mich an dem Gespräch. Schnell werde ich mit den anderen warm.
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra4" value="4">
+       <b> A</b>: Ich aktiviere die Kamera und grüße freundlich. Dann beginne ich ein lockeres Gespräch mit dem Dozenten. 
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="3">
-      <b> B</b>: Ich gehe in den Raum, setze mich auf einen Platz direkt neben einer anderen Person und beginne ein Gespräch.
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra4" value="3">
+      <b> B</b>: Ich aktiviere die Kamera und grüße freundlich. Dann warte ich ab, ob der Dozent ein Gespräch führen möchte. 
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="2">
-        <b> C</b>:  Ich stelle mich in die Gruppe oder setze mich neben eine andere Person und warte darauf, dass jemand mich in ein Gespräch einbezieht.
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra4" value="2">
+        <b> C</b>:  Ich lasse die Kamera aus und warte bis sich noch andere Studierende zuschalten.
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="1">
-       <b> D</b>:  Ich suche mir einen einzelnen Platz und warte darauf, dass sich jemand zu mir setzt. 
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra4" value="1">
+       <b> D</b>:  Ich lege wieder auf (natürlich wegen technischen Problemen) und warte nochmal ein paar Minuten in der Hoffnung, dass ich dann nicht mehr alleine dem Dozenten gegenübersitze.  
       </div>
     
   </div>
@@ -87,13 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Extra1Value = this.querySelector('input').value;
+      const Extra4Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Extra1Value);
+      sessionStorage.setItem('selectedAnswer', Extra4Value);
 
       // Weiterleiten zur nächsten Seite
-      window.location.href = '02DieersteHausarbeit.html';
+      window.location.href = '12HinsetzenZuhören.html';
     });
   });
 });
