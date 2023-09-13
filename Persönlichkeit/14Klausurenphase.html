@@ -35,22 +35,18 @@
     font-size: clamp(8px, 1vw, 15px); 
     position: relative;">
 
-<h1> Start ins Studium... </h1>
-  Sie befinden sich in der Einführungswoche des Studiums, die von den Dozentinnen und Dozenten der Hochschule organisiert wird. 
-  Am ersten Tag werden Sie zunächst zusammen mit Ihrem gesamten Jahrgang unterwegs sein - etwa 50 Studierenden. 
-  Später werden Sie in zwei Gruppen bzw. Klassen aufgeteilt, die so bis zum Ende des Semesters bestehen bleiben werden. 
- <br>
- <br> 
- Die Dozentinnen und Dozenten werden sich selbst und Ihren Fachbereich vorstellen sowie die vielfältigen Möglichkeiten und Aufgaben präsentieren, 
-  die man durch das duale Studium wahrnhemen kann - z.B. in den Bereichen Umweltschutz, Flüchtlingsangelegenheiten oder Arbeitsschutz. Außerdem werden Sie die anderen Studierenden aus Ihrer Klasse besser kennenlernen... 
-  Mal durch mehr, mal durch weniger kreative Kennenlernspiele. Ein Rundgang über den Campus und ein Abstecher in die Bibliothek dürfen natürlich auch nicht fehlen.
-
-<br>
-<br>
-<br>
- 
- Am Morgen des ersten Tages machen Sie sich auf den Weg zum Campus, um an der ersten Informationsverantaltung für den kompletten Jahrgang teilzunehmen. 
- Vor dem Raum haben sich einige Studierende zusammengefunden, die bereits in ein Gespräch vertieft sind. Im Raum sitzen ebenfalls schon vereinzelt Personen.
+<h1> Klausurenphase... </h1>
+  Das zweite Semster neigt sich dem Ende zu und es müssen in verschiedenen Fächern Klausuren
+geschrieben werden. Nachdem Sie heute die erste zentrale, vierstündige Klausur mit dem Inhalt aus beiden Semestern
+im Studium geschrieben haben, sind Sie ziemlich erschöpft.  
+Obwohl es sehr anstrengend war, haben Sie ein gutes Gefühl bei der Klausur gehabt.
+Da heute sonst nichts mehr ansteht, wollen Sie nach Hause gehen. Auf dem Weg sehen Sie einen 
+Mitstudenten, der sehr betrübt aussieht. Er hat sehr früh abgegeben. Wahrscheinlich hat er die Aufgaben gesehen
+und dann gemerkt, dass er viel zu schlecht vorbereitet war. Bei einer solch wichtigen Klausur
+ist es verständlich, dass er jetzt ziemlich am Boden ist. Allerdings haben Sie in den Tagen
+vor der Klausur mitbekommen, dass er häufig Bilder von Feiern oder von Treffen im Park mit Freunden in 
+den sozialen Medien gepostet hat. Daher vermuten Sie, dass er nicht genug Zeit in das 
+Lernen für die Klausur investiert hat.
 
 <br>
 <br>
@@ -60,24 +56,24 @@
     
       <div class="answer-tile">
         <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra1" value="4">
-       <b> A</b>: Ich gehe aktiv auf die Gruppe zu und stelle mich kurz vor. Dann beteilige ich mich an dem Gespräch. Schnell werde ich mit den anderen warm.
+       <b> A</b>: Ich gehe auf ihn zu und frage was los ist. Ich versuche ihn aufzumuntern und biete ihm an beim nächsten Mal zusammen in einer Lerngruppe zu lernen. 
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="3">
-      <b> B</b>: Ich gehe in den Raum, setze mich auf einen Platz direkt neben einer anderen Person und beginne ein Gespräch.
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="1">
+      <b> B</b>: Ich sage ihm, dass er sich beim nächsten Mal einfach mehr anstrengen muss. Wenn er eine gute Note bekommen möchte, soll er einfach mehr Zeit zum Lernen investieren.
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="2">
-        <b> C</b>:  Ich stelle mich in die Gruppe oder setze mich neben eine andere Person und warte darauf, dass jemand mich in ein Gespräch einbezieht.
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="3">
+        <b> C</b>:  Ich versuche den Mitstudenten so gut es geht aufzumuntern. Ich sage, dass er beim nächsten Mal bestimmt eine bessere Note schreibt, wenn er noch ein bisschen mehr Zeit zum Lernen findet.
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="1">
-       <b> D</b>:  Ich suche mir einen einzelnen Platz und warte darauf, dass sich jemand zu mir setzt. 
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="2">
+       <b> D</b>: Ich denke, dass er wahrscheinlich weiß, dass er sich nicht genügend angestrengt hat und jetzt darüber nachdenken wird. Ich muss ihn also nicht noch mit meinen Ratschlägen belasten. Deshalb gehe ich nach Hause. 
       </div>
     
   </div>
@@ -93,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
       sessionStorage.setItem('selectedAnswer', Extra1Value);
 
       // Weiterleiten zur nächsten Seite
-      window.location.href = '02DieersteHausarbeit.html';
+      window.location.href = '15Semester2.html';
     });
   });
 });
