@@ -57,25 +57,25 @@ Die Mail ist mit hoher Priorität gekennzeichnet und Sie werden darin gebeten ei
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra1" value="4">
-       <b> A</b>: Ich gehe aktiv auf die Gruppe zu und stelle mich kurz vor. Dann beteilige ich mich an dem Gespräch. Schnell werde ich mit den anderen warm.
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Gewiss3" value="3">
+       <b> A</b>: Ich arbeite mich sofort in die Aufgabe ein. Den Inhalt arbeite ich vollständig aus, auch wenn ich länger arbeiten muss. 
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="3">
-      <b> B</b>: Ich gehe in den Raum, setze mich auf einen Platz direkt neben einer anderen Person und beginne ein Gespräch.
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Gewiss3" value="4">
+      <b> B</b>: Ich arbeite mich sofort in die Aufgabe ein. Auch wenn ich viel länger arbeite, überprüfe ich nochmal alles doppelt und gebe dem Inhalt noch den letzten Schliff. 
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="2">
-        <b> C</b>:  Ich stelle mich in die Gruppe oder setze mich neben eine andere Person und warte darauf, dass jemand mich in ein Gespräch einbezieht.
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Gewiss3" value="1">
+        <b> C</b>:  Ich investiere nochmal kurz Zeit in die Aufgabe. Falls etwas fehlt, kann ich es in den nächsten Tagen noch nachliefern. 
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="1">
-       <b> D</b>:  Ich suche mir einen einzelnen Platz und warte darauf, dass sich jemand zu mir setzt. 
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Gewiss3" value="2">
+       <b> D</b>:  Ich stelle die Aufgabe erstmal zurück, werde mich aber direkt am Montagmorgen dransetzen. 
       </div>
     
   </div>
@@ -85,13 +85,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Extra1Value = this.querySelector('input').value;
+      const Gewiss3Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Extra1Value);
+      sessionStorage.setItem('selectedAnswer', Gewiss3Value);
 
       // Weiterleiten zur nächsten Seite
-      window.location.href = '02DieersteHausarbeit.html';
+      window.location.href = '11Zufrüh.html';
     });
   });
 });
