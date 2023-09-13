@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Extra1Value = this.querySelector('input').value;
+      const Extra3Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
       sessionStorage.setItem('selectedAnswer', Extra3Value);
