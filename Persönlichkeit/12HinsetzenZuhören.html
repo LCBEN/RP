@@ -36,21 +36,24 @@
     position: relative;">
 
 <h1> Start ins Studium... </h1>
-  Sie befinden sich in der Einführungswoche des Studiums, die von den Dozentinnen und Dozenten der Hochschule organisiert wird. 
-  Am ersten Tag werden Sie zunächst zusammen mit Ihrem gesamten Jahrgang unterwegs sein - etwa 50 Studierenden. 
-  Später werden Sie in zwei Gruppen bzw. Klassen aufgeteilt, die so bis zum Ende des Semesters bestehen bleiben werden. 
- <br>
- <br> 
- Die Dozentinnen und Dozenten werden sich selbst und Ihren Fachbereich vorstellen sowie die vielfältigen Möglichkeiten und Aufgaben präsentieren, 
-  die man durch das duale Studium wahrnhemen kann - z.B. in den Bereichen Umweltschutz, Flüchtlingsangelegenheiten oder Arbeitsschutz. Außerdem werden Sie die anderen Studierenden aus Ihrer Klasse besser kennenlernen... 
-  Mal durch mehr, mal durch weniger kreative Kennenlernspiele. Ein Rundgang über den Campus und ein Abstecher in die Bibliothek dürfen natürlich auch nicht fehlen.
+  Neben den Seminaren gibt es auch noch Vorlesungen, 
+in denen der/die Dozent/in etwa 90min zu einem bestimmten
+Thema referiert. Vielleicht noch was zur Anzahl Vorlesungen, 
+Verhältnis zu Seminaren. Da meistens sehr viele Inhalte in einer Vorlesung abgedeckt
+werden, laden die Dozentinnen und Dozenten häufig die Präsentationsfolien oder Skripte hoch. 
+So können die Inhalte besser wiederholt und für die Klausuren eingeübt werden.
+In einer Vorlesung lädt die Dozentin allerdings kein
+Skript zur Vorlesung hoch und auch die Präsentationsfolien werden nicht geteilt.
+Sie sagt, dass es wichtiger sei gut zuzuhören, um sich die Inhalte zu merken. 
+Ansonsten solle man in ein bestimmtes Buch schauen, an dem sich die Vorlesung grob 
+orientiere. 
+
 
 <br>
 <br>
 <br>
- 
- Am Morgen des ersten Tages machen Sie sich auf den Weg zum Campus, um an der ersten Informationsverantaltung für den kompletten Jahrgang teilzunehmen. 
- Vor dem Raum haben sich einige Studierende zusammengefunden, die bereits in ein Gespräch vertieft sind. Im Raum sitzen ebenfalls schon vereinzelt Personen.
+Am Ende des Semesters müssen Sie eine zweistündige Klausur über die Vorlesung schreiben.
+
 
 <br>
 <br>
@@ -59,25 +62,25 @@
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra1" value="4">
-       <b> A</b>: Ich gehe aktiv auf die Gruppe zu und stelle mich kurz vor. Dann beteilige ich mich an dem Gespräch. Schnell werde ich mit den anderen warm.
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Gewiss4" value="3">
+       <b> A</b>: Ich lese das angegebene Buch genau durch und mache ein paar Notizen zur Vorlesung, wenn ich etwas besonders wichtig finde.   
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra1" value="3">
-      <b> B</b>: Ich gehe in den Raum, setze mich auf einen Platz direkt neben einer anderen Person und beginne ein Gespräch.
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Gewiss4" value="2">
+      <b> B</b>:Ich brauche mir keine Notizen zu machen. An das wichtigste kann ich mich gut erinnern. Stattdessen lese ich mir einfach das angegebene Buch genau durch.
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra1" value="2">
-        <b> C</b>:  Ich stelle mich in die Gruppe oder setze mich neben eine andere Person und warte darauf, dass jemand mich in ein Gespräch einbezieht.
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Gewiss4" value="1">
+        <b> C</b>:  Ich höre einfach zu. Für die Klausur werde ich dann schon alles wichtige wissen.
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra1" value="1">
-       <b> D</b>:  Ich suche mir einen einzelnen Platz und warte darauf, dass sich jemand zu mir setzt. 
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Gewiss4" value="4">
+       <b> D</b>:  Ich versuche schriftlich alles festhalten und arbeite gegebenenfalls mit anderen Studierenden zusammen daran selbst ein Skript zu erstellen. Zur Ergänzung nutze ich das angegebene Buch. 
       </div>
     
   </div>
@@ -87,13 +90,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Extra1Value = this.querySelector('input').value;
+      const Gewiss4Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Extra1Value);
+      sessionStorage.setItem('selectedAnswer', Gewiss4Value);
 
       // Weiterleiten zur nächsten Seite
-      window.location.href = '02DieersteHausarbeit.html';
+      window.location.href = '13MeineMeinung.html';
     });
   });
 });
