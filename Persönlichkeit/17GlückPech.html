@@ -50,24 +50,24 @@ das Buch schon weg ist. Was tun Sie?
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vert6" value="2">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr5" value="2">
        <b> A</b>: Ich spreche Sie an und biete ihr an, sich einzelne Seiten zu kopieren oder abzufotografieren. Ich sage ihr, dass ich das Buch leider selbst brauche und ihr erst geben kann, wenn ich meine Aufgabe abgeschlossen habe.
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Vert6" value="1">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr5" value="1">
       <b> B</b>: Da hat Sie wohl Pech gehabt. Ich brauche das Buch und kann es erst zurückgeben, wenn ich meine Aufgabe abgeschlossen habe. Andernfalls würde ich ja die Qualität meiner Arbeit gefährden. Daher gehe ich schnell weiter. 
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Vert6" value="3">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr5" value="3">
         <b> C</b>:  Ich spreche Sie an und schlage vor, dass ich direkt damit beginnen werde das Buch für die Recherche zu nutzen und mir Notizen zu machen. Sobald ich damit fertig bin, nehme ich Kontakt zu ihr auf und gebe ihr das Buch. Falls ich noch etwas aus dem Buch brauche, melde ich mich und frage, ob ich nochmal reinschauen darf.  
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Vert6" value="4">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr5" value="4">
        <b> D</b>:  Ich spreche sie an und sage ihr, dass ich das Buch gerade ausgeliehen habe. Ich schlage vor, dass ich mir jetzt zuerst ein paar Dinge, die mir relevant erscheinen,  rauskopiere und ihr gleich das Buch gebe. Falls ich noch etwas benötige, melde ich mich und frage, ob ich nochmal reinschauen darf.  
       </div>
     
@@ -78,10 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Vert6Value = this.querySelector('input').value;
+      const Vertr5Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Vert6Value);
+      sessionStorage.setItem('selectedAnswer', Vertr56Value);
 
       // Weiterleiten zur nächsten Seite
       window.location.href = '18WiederundWieder.html';
