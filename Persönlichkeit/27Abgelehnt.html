@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> ABGELEHNT?!?... </h1>
+ Während Ihrer Arbeit in der vierten Praxisphase bekommen Sie einen Anruf von einem Bürger.
+Der Anrufer ist offensichtlich sehr aufgebracht und beschwert sich lautstark über seinen
+abgelehnten Antrag. 
+
+<br>
+<br>    
+<br>
+Schnell wird jedoch klar, dass sich der Bürger zu Unrecht aufregt, da einen äußerst
+lückenhaften und unzureichenden Antrag gestellt hat. 
+<br>
+<br>
+ 
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr8" value="1">
+       <b> A</b>: Ich sage ihm, dass der Fehler nicht bei uns liegt. Er solle sich erst beruhigen und dann wieder anrufen. Erst dann kann ich ihm weiterhelfen. Dann lege ich auf. 
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr8" value="2">
+      <b> B</b>: Ich warte bis er einen Moment Luft holt und erkläre ihm dann, warum er falsch liegt. Dann sage ich ihm, was er tun kann, um doch noch eine Genehmigung zu bekommen. 
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr8" value="4">
+        <b> C</b>: Ich äußere Verständnis für seine Ärger und sage, dass die Information von unserer Seite, wie der Antrag zu stellen ist, eventuell missverständlich waren. Dann sage ich, dass ich ihm gerne helfen möchte den Antrag genehmigungsfähig zu machen. 
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr8" value="3">
+       <b> D</b>:  Ich äußere Verständnis für seinen Ärger und versuche ihn zu beruhigen. Dann erkläre ich ihm, was er tun kann, um eine Genehmigung zu bekommen. Falls er Fragen oder Schwierigkeiten mit dem Antrag hat, helfe ich gerne weiter.
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Vertr8Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Vertr8Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '28Gehstduhin.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
