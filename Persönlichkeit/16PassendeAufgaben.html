@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Passende Aufgaben... </h1>
+   Zurück im Studium steht eine Gruppenarbeit an. Nachdem die Anforderungen durch die Dozentin
+ bekanntgegeben und erklärt worden sind, scheint es sinnvoll die Aufgaben aufzuteilen. Sie sind sich in
+der Gruppe einig, dass die verschiedenen Aufgaben am ehesten nach den jeweiligen Stärken und
+Interessen der Gruppenmitglieder verteilt werden sollten.
+Es gibt vier Aufgabenbereiche: <br>
+ <div style="text-indent: 2em;">
+1. Recherche <br> </div>  <div style="text-indent: 2em;">
+2. Ausarbeitung zu dritt <br> </div>  <div style="text-indent: 2em;">
+3. Koordination und Austauch mit anderen Gruppen <br> </div>  <div style="text-indent: 2em;">
+4. Präsentation vor der Klasse
+</div> Was trifft am ehesten auf Sie zu?
+
+<br>
+<br>
+<br>
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra5" value="2">
+       <b> A</b>: Ich arbeite lieber mit meinem gewohnten Team. Daher möchte ich Teil des Ausarbeitungsteams sein. 
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra5" value="3">
+      <b> B</b>: Ich möchte die Koordination mit den anderen Gruppen übernehmen, da ich gut auf Menschen zugehen kann.
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra5" value="1">
+        <b> C</b>:  Ich mache die Recherche und übernehme das Sammeln von relevanten Informationen, da ich lieber alleine arbeite.
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra5" value="4">
+       <b> D</b>: Ich übernehme die Präsentation vor der Klasse, da ich gut darin bin, vorne zu stehen und andere Menschen für eine Sache zu begeistern. 
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Vertr4Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Vertr4Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '15Semester2.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
