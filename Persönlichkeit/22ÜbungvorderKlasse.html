@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Übung vor der Klasse... </h1>
+  Im Rahmen eines Seminars soll ein schwieriges Bürgergespräch simuliert 
+werden. Bisher haben sie da nur wenig Erfahrung gesammelt - der Kontakt in Ihren
+bisherigen Praxisphasen war entweder eher gering oder gänzlich positiv. Jetzt werden 
+Freiwillige gesucht, die das Gespräch mit dem Bürger 
+(gespielt durch den Dozenten) vor der Klasse führen. 
+Der Rest der Klasse soll dabei aufmerksam beobachten und später Feedback geben. 
+
+<br>
+<br>
+<br>
+ 
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra7" value="2">
+       <b> A</b>: Ich warte darauf, dass sich andere freiwillig melden und schaue mir an, wie sie mit der Situation umgehen. Vielleicht melde ich mich dann später freiwillig, wenn ich mich sicher genug fühle. 
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra7" value="3">
+      <b> B</b>: Ich schaue es mir erstmal ein- oder zweimal an. Danach möchte ich es auf jeden Fall auch selbst ausprobieren. 
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra7" value="1">
+        <b> C</b>: Ich melde mich nicht freiwillig, da ich mich zu unsicher fühle mit dem schwierigen Bürgergespräch umzugehen – gerade wenn mich dabei auch noch die gesamte Klasse beobachtet, fühle ich mich unwohl.
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra7" value="4">
+       <b> D</b>:  Ich melde mich sofort freiwillig. Es macht mir Spaß vor anderen zu sprechen und ich denke, dass ich mit allen möglichen Situationen gut umgehen kann. 
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Extra7Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Extra7Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '23Andersgeplant.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
