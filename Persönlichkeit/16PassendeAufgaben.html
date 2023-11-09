@@ -83,13 +83,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Vertr4Value = this.querySelector('input').value;
+      const Extra5Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Vertr4Value);
+      sessionStorage.setItem('selectedAnswer', Extra5Value);
 
       // Weiterleiten zur nächsten Seite
-      window.location.href = '15Semester2.html';
+      window.location.href = '17GlückPech.html';
     });
   });
 });
