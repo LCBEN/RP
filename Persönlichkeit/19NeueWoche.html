@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Neue Woche, neue Aufgaben... </h1>
+  Mittlerweile hat sich Ihre Situation verbessert. Sie bekommen nun auch vermehrt 
+anspruchsvollere Aufgaben, die Sie eigenverantwortlich bearbeiten sollen. Zu Beginn 
+der neuen Woche bekommen Sie gleich mehrere, zum Teil auch recht umfangreiche Aufgaben 
+zugeteilt. Zur Bearbeitung bekommen Sie noch einen ganzen Stapel an Informationen und Unterlagen, 
+die Sie für die Bearbeitung benötigen. Wie gehen Sie vor?
+
+<br>
+<br>
+<br>
+ 
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Gewiss6" value="4">
+       <b> A</b>: Ich mache einen detaillierten Plan mit Zwischenschritten, benötigter Zeit pro Schritt, und schreibe mögliche Probleme und Hindernisse auf, die bei der Bearbeitung auftreten könnten. Während der Bearbeitung schaue ich immer wieder in meinen Plan.  
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Gewiss6" value="3">
+      <b> B</b>: Ich plane mein Vorgehen Schritt für Schritt, überlege mir den Zeitbedarf für jede Aufgabe und halte alles schriftlich fest.
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Gewiss6" value="2">
+        <b> C</b>:  Ich überlege mir eine grobe Struktur, in der ich die Aufgaben abarbeite.
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Gewiss6" value="1">
+       <b> D</b>:  Ich arbeite die Aufgaben nacheinander ab und beginne direkt mit der ersten Aufgabe, um keine weitere Zeit zu verlieren.
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Gewiss6Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Gewiss6Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '20Semester3.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
