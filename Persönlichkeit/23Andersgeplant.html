@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Anders als geplant... </h1>
+  In einem Seminar sollen Sie zusammen mit einem anderen Studenten, 
+mit dem Sie bisher noch nie zusammengearbeitet haben, ein Referat halten. 
+Am Ende bekommen Sie eine gemeinsame Note. In der Vorbereitung auf das gemeinsame 
+Referat teilen Sie sich genau auf, wer für welche Inhalte zuständig ist. Die Vorbereitung
+lief insgesamt sehr gut und Sie gehen mit einem guten Gefühl in das Referat.
+Anders als zuvor abgesprochen, nimmt der Mitstudent jeoch während des 
+Referats viele Inhalte vorweg, für die Sie eigentlich zuständig wären 
+und die Sie für Ihren Teil einstudiert haben. Wie reagieren Sie?
+
+
+<br>
+<br>
+<br>
+ 
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr7" value="3">
+       <b> A</b>: Ich halte meinen Teil so gut wie möglich und versuche mir nichts anmerken zu lassen. Ziemlich verärgert beschwere ich mich bei meinem Mitstudenten über sein Vorgehen.
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr7" value="2">
+      <b> B</b>: Ich sage während des Referats den Zuhörern, dass es zu Dopplungen oder Unstimmigkeiten kommen kann, weil mein Mitstudent einige Inhalte vorweggenommen hat. 
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr7" value="4">
+        <b> C</b>: Ich halte meinen Teil so gut wie möglich und versuche mir nichts anmerken zu lassen. Später sage ich dem Mitstudenten, dass ich etwas verunsichert war, weil ich das Gefühl hatte, dass er einige Inhalte vorweggenommen hat. Dann frage ich ihn, wie er die Situation wahrgenommen hat .
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr7" value="1">
+       <b> D</b>:  Als ich wahrnehme dass mein Mitstudent Inhalte vorwegnimmt, muss ich ihn an mehreren Stellen unterbrechen. Ich weise die Zuhörer darauf hin, dass ich später noch genauer auf die Inhalte eingehen werde.
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Vertr7Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Vertr7Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '24Klausurvorbereitung.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
