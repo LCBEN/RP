@@ -39,7 +39,6 @@
  Sie befinden sich nun in der zweiten praktischen Phase des Studiums.
 In dieser bekommen Sie nochmal die Gelegenheit in einen anderen Bereich 
 reinzuschauen. Erklärung der Praxisphasen und des dualen Aufbausw. Mehr Kontext...
-Befinden sich im Dezernat x, wo y und z gemacht wird.
 Leider läuft es nicht ganz so, wie Sie es sich zunächst erhofft hatten. 
 Schnell haben Sie den Eindruck, dass Sie nur sehr einfache und eintönige Aufgaben
 zugeteilt bekommen, obwohl Sie fachlich durchaus in der Lage wären auch 
@@ -62,24 +61,24 @@ Was würden Sie am ehesten tun?
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vert6" value="2">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vertr6" value="2">
        <b> A</b>: Ich spreche meinen Eindruck an und mache dabei klar, dass ich mich unterfordert fühle und zu mehr fähig bin. 
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Vert6" value="3">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vertr6" value="3">
       <b> B</b>: Ich mache die Aufgabe und spreche danach an, dass ich ab jetzt gerne herausfordernde Aufgaben machen möchte.
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Vert6" value="1">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vertr6" value="1">
         <b> C</b>:  Ich sage, dass ich die Aufgabe nicht machen möchte und verlange Aufgaben, die meinem Niveau entsprechen.
       </div>
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Vert6" value="4">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vertr6" value="4">
        <b> D</b>:  Ich mache die Aufgabe und spreche danach freundlich an, dass ich mir etwas mehr Abwechslung wünsche und, wenn möglich,  gerne zusätzlich anspruchsvollere Aufgaben übernehmen möchte.
       </div>
     
@@ -90,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Vert6Value = this.querySelector('input').value;
+      const Vertr6Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Vert6Value);
+      sessionStorage.setItem('selectedAnswer', Vertr6Value);
 
       // Weiterleiten zur nächsten Seite
       window.location.href = '19NeueWoche.html';
