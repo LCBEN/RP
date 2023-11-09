@@ -35,12 +35,14 @@
     font-size: clamp(8px, 1vw, 15px); 
     position: relative;">
 
-<h1> Voller Einstieg... </h1>
- Zu Beginn der nächsten Praxisphase, die sich von der zweiten Hälfte
-des vierten Semesters bis einschließlich der zweiten Hälfte des 
-fünften Semesters erstreckt und insgesamt 6 Monate dauert, besprechen Sie 
-mit Ihrer Ausbilderin Ihren Einstieg ins Dezernat. Dabei bekommen Sie auch erklärt, was alles zu erledigen ist, welche Aufgaben Sie in den nächsten Tagen
-machen sollen, und welche Besonderheiten es zu beachten gilt. Sie bekommen außerdem eine Einblick über das Dezernat und seine Aufgaben. Wie verhalten Sie sich?
+<h1> Vorbereitung auf die Klausuren... </h1>
+ Mittlerweile ist das Semester schon weiter vorangeschritten und die Klausuren rücken näher.
+In einem Fach wurde zu Beginn der entprechenden Vorlesung angekündigt, dass
+das zur Verfügung gestellte Skript zur Vorlesung als Grundlage für die Klausur 
+dient. Ergänzend dazu wurden zu jedem Vorlesungstermin auch einige Kapitel aus
+verschiedenen Büchern mit Hintergrundinformationen angegeben, die Sie lesen sollten
+und die daher ebenfalls in der Klausur drankommen könnten. Wie bereiten sie sich vor?
+
 
 <br>
 <br>
@@ -50,25 +52,24 @@ machen sollen, und welche Besonderheiten es zu beachten gilt. Sie bekommen auße
   <div class="answer-grid">
     
       <div class="answer-tile">
-        <input type="radio" id="130723"  onclick="Fall1='1'" name="Gewiss8" value="2">
-       <b> A</b>: Ich mache mir ein paar einzelne Notizen, um nichts zu vergessen.
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Gewiss7" value="2">
+       <b> A</b>: Ich fange ausreichend vorher an das zur Verfügung gestellte Skript zu lernen.
       </div>
     
     
       <div class="answer-tile">
-        <input type="radio" id="060723" onclick="Fall1='2'" name="Gewiss8" value="3">
-      <b> B</b>: Ich schreibe die einzelnen Aufgaben auf und ergänze sie vereinzelt mit wichtigen Punkten, die ich beachten soll. 
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Gewiss7" value="3">
+      <b> B</b>: Ich mache Notizen zu den angegeben Kapiteln im Buch und lerne diese zusammen mit dem Skript und Notizen aus der Vorlesung.
       </div>
     
   
       <div class="answer-tile">
-        <input type="radio" id="180723" onclick="Fall1='3'" name="Gewiss8" value="4">
-        <b> C</b>: Ich schreibe so viel wie möglich auf. Zu den einzelnen Aufgaben mache ich mir auch intensiv Notizen. Im Nachgang an das Gespräch bringe ich alles in eine gute Struktur und kläre noch offene Punkte direkt ab.
-      </div>
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Gewiss7" value="1">
+        <b> C</b>: Ich habe die Inhalte aus der Vorlesung verstanden, daher reicht ein grober Überblick.
     
       <div class="answer-tile">
-        <input type="radio" id="120723" onclick="Fall1='4'" name="Gewiss8" value="1">
-       <b> D</b>:  Ich kann mir das merken. Zur Not kann ich ja auch einfach nochmal nachfragen.
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Gewiss7" value="4">
+       <b> D</b>:  Ich mache detaillierte Notizen zu den Kapiteln im Buch und der Vorlesung, frage andere Leute aus höheren Semestern nach Informationen zur Klausur, organisiere Lerngruppen.
       </div>
     
   </div>
@@ -78,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const answerTiles = document.querySelectorAll('.answer-tile');
   answerTiles.forEach(function(tile) {
     tile.addEventListener('click', function() {
-      const Gewiss8Value = this.querySelector('input').value;
+      const Gewiss7Value = this.querySelector('input').value;
 
       // Speichern des Werts im Session Storage
-      sessionStorage.setItem('selectedAnswer', Gewiss8Value);
+      sessionStorage.setItem('selectedAnswer', Gewiss7Value);
 
       // Weiterleiten zur nächsten Seite
       window.location.href = '25VollerEinstieg.html';
