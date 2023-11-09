@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Und wieder, und wieder, und wieder... </h1>
+ Sie befinden sich nun in der zweiten praktischen Phase des Studiums.
+In dieser bekommen Sie nochmal die Gelegenheit in einen anderen Bereich 
+reinzuschauen. Erklärung der Praxisphasen und des dualen Aufbausw. Mehr Kontext...
+Befinden sich im Dezernat x, wo y und z gemacht wird.
+Leider läuft es nicht ganz so, wie Sie es sich zunächst erhofft hatten. 
+Schnell haben Sie den Eindruck, dass Sie nur sehr einfache und eintönige Aufgaben
+zugeteilt bekommen, obwohl Sie fachlich durchaus in der Lage wären auch 
+anspruchsvollere Aufgaben zu übernehmen, die Ihrem derzeitigen Ausbildungsstand und Ihren Fähigkeiten eher 
+entsprächen.
+
+<br>
+<br>
+<br>
+  Nachdem sich eine Kollegin gestern
+krankgemeldet hat, müssen neue Aufgaben übernommen und andere Aufgaben neu zugeteilt werden. 
+Daher haben Sie gehofft, dass Sie nun ebenfalls ein paar anspruchsvollere Tätigkeiten übernehmen könnten.
+Als Sie morgens in die Dienststelle kommen, werden Sie aber wieder mit den gleichen, eintönigen Aufgaben betraut, 
+die Sie auch schon die letzten Tage gemacht haben.
+Was würden Sie am ehesten tun?
+
+<br>
+<br>
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vert6" value="2">
+       <b> A</b>: Ich spreche meinen Eindruck an und mache dabei klar, dass ich mich unterfordert fühle und zu mehr fähig bin. 
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vert6" value="3">
+      <b> B</b>: Ich mache die Aufgabe und spreche danach an, dass ich ab jetzt gerne herausfordernde Aufgaben machen möchte.
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vert6" value="1">
+        <b> C</b>:  Ich sage, dass ich die Aufgabe nicht machen möchte und verlange Aufgaben, die meinem Niveau entsprechen.
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vert6" value="4">
+       <b> D</b>:  Ich mache die Aufgabe und spreche danach freundlich an, dass ich mir etwas mehr Abwechslung wünsche und, wenn möglich,  gerne zusätzlich anspruchsvollere Aufgaben übernehmen möchte.
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Vert6Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Vert6Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '19NeueWoche.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
