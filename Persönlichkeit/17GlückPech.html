@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Glück oder Pech?... </h1>
+ Zur Bearbeitung einer Aufgabe möchten Sie ein Buch
+ausleihen, das genau auf das Thema abgestimmt ist. In der hochschuleigenen Bibliothek am Campus Gießen
+ist auch ein Exemplar verfügbar. Schnell gehen Sie zur Ausleihtheke und leihen das Buch aus.
+Als Sie schon fast zur Tür raus sind, bekommen Sie mit, dass eine andere Studentin das Buch ebenfalls
+sucht und gerne ausleihen möchte. Anscheinend hat sie noch nicht gemerkt, dass 
+das Buch schon weg ist. Was tun Sie?
+
+<br>
+<br>
+<br>
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Vert6" value="2">
+       <b> A</b>: Ich spreche Sie an und biete ihr an, sich einzelne Seiten zu kopieren oder abzufotografieren. Ich sage ihr, dass ich das Buch leider selbst brauche und ihr erst geben kann, wenn ich meine Aufgabe abgeschlossen habe.
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Vert6" value="1">
+      <b> B</b>: Da hat Sie wohl Pech gehabt. Ich brauche das Buch und kann es erst zurückgeben, wenn ich meine Aufgabe abgeschlossen habe. Andernfalls würde ich ja die Qualität meiner Arbeit gefährden. Daher gehe ich schnell weiter. 
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Vert6" value="3">
+        <b> C</b>:  Ich spreche Sie an und schlage vor, dass ich direkt damit beginnen werde das Buch für die Recherche zu nutzen und mir Notizen zu machen. Sobald ich damit fertig bin, nehme ich Kontakt zu ihr auf und gebe ihr das Buch. Falls ich noch etwas aus dem Buch brauche, melde ich mich und frage, ob ich nochmal reinschauen darf.  
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Vert6" value="4">
+       <b> D</b>:  Ich spreche sie an und sage ihr, dass ich das Buch gerade ausgeliehen habe. Ich schlage vor, dass ich mir jetzt zuerst ein paar Dinge, die mir relevant erscheinen,  rauskopiere und ihr gleich das Buch gebe. Falls ich noch etwas benötige, melde ich mich und frage, ob ich nochmal reinschauen darf.  
+      </div>
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Vert6Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Vert6Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '14Klausurenphase.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
