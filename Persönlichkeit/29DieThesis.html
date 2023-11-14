@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Die Thesis... </h1>
+...Das Ende des Studiums rückt näher und damit auch die zentrale Abschlussarbiet - die Thesis. Eine Thesis ist eine umfangreiche, wissenschaftliche Abschlussarbeit, 
+  in der Studierende ihre Fähigkeiten zur eigenständigen Forschung und Analyse eines spezifischen Themas unter Beweis stellen. 
+  Sie dient als Nachweis der erworbenen Fachkenntnisse und der Befähigung zur wissenschaftlichen Arbeit. Die Auseinandersetzung mit dem Thema beginnt schon x Monate vor dem Abgabetermin, für das eigentliche Schreiben 
+  stehen dann noch x Wochen zur Verfügung. Während dieser Zeit absolvieren Sie das letze Praktikum, sodass Sie gleichzeitig auch noch Ihre praktische Tätigkeit koordinieren müssen.
+  Wie würden Sie die Bearbeitung der Thesis angehen?
+
+<br>
+<br>
+<br>
+ 
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Gewiss9" value="3">
+       <b> A</b>: Ich mache einen Schritt-für-Schritt Plan und kalkuliere genug Puffer ein, wenn etwas dazwischen kommen sollte.Ich mache einen detaillierten Plan mit wöchentlichen Zielen und konkreten Arbeitsschritten. Ich investiere sehr viel, um den Plan so auch umzusetzen - auch wenn ich mich nach einem vollen Arbeitstag nochmal dransetzen muss.
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Gewiss9" value="2">
+      <b> B</b>: Ich setze mir ein paar Meilensteine mit ungefähren Zeitangaben, weiß aber nicht genau, ob das auch realitisch umsetzbar ist. 
+        Das beste Vorgehen wird sich dann schon zeigen, wenn ich angefangen habe, an dem Thema zu arbeiten.
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Gewiss9" value="1">
+        <b> C</b>: Ich gleiche meinen Fortschritt mit meinen Kommilitonen ab, um abzuschätzen wie gut ich in der Zeit liege.
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Gewiss9" value="4">
+       <b> D</b>:  Ich mache einen detaillierten Plan mit wöchentlichen Zielen und konkreten Arbeitsschritten. Ich investiere sehr viel, um den Plan so auch umzusetzen - auch wenn ich mich nach einem vollen Arbeitstag nochmal dransetzen muss.
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Gewiss9Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Gewiss9Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '30Semester5+6.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
