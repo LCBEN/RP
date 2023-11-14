@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Gehst du hin?... </h1>
+...Es ist Freitagnachmittag. Der Vorgängerjahrgang, der letztes Jahr seinen Abschluss gemacht hat, richtet 
+am morgigen Samstag eine Feier aus, an der nochmal alle aus dem Jahrgang 
+zusammenkommen sollen. Die Einladung ist aber auch ausdrücklich offen für Leute 
+aus den jüngeren Jahrgängen. Da Sie erst kürzlich von der Feier erfahren haben, wissen Sie nicht, ob andere 
+Studierende aus ihrem Jahrgang zugesagt haben. Falls Sie hingehen, 
+kann es also sein, dass Sie niemanden dort kennen werden.
+
+
+<br>
+<br>
+<br>
+ 
+ <div class="question">
+  <div class="answer-grid">
+    
+      <div class="answer-tile">
+        <input type="radio" id="130723"  onclick="Fall1='1'" name="Extra8" value="4">
+       <b> A</b>: Ich würde hingehen, da ich gerne viele neue Leute kennenlerne. 
+      </div>
+    
+    
+      <div class="answer-tile">
+        <input type="radio" id="060723" onclick="Fall1='2'" name="Extra8" value="2">
+      <b> B</b>:Ich würde eher nicht hingehen, außer ein Freund/eine Freundin begleitet mich. 
+      </div>
+    
+  
+      <div class="answer-tile">
+        <input type="radio" id="180723" onclick="Fall1='3'" name="Extra8" value="1">
+        <b> C</b>:Ich würde nicht hingehen, weil ich mich unwohl fühle, wenn ich niemanden dort kenne.
+      </div>
+    
+      <div class="answer-tile">
+        <input type="radio" id="120723" onclick="Fall1='4'" name="Extra8" value="3">
+       <b> D</b>:  Ich würde eher hingehen und hoffen, dass ich jemanden dort kenne. Wenn ich niemanden kenne, würde ich versuchen eine Gruppe anzusprechen und mich während des Abends dort einzuhaken. 
+    
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const answerTiles = document.querySelectorAll('.answer-tile');
+  answerTiles.forEach(function(tile) {
+    tile.addEventListener('click', function() {
+      const Extra8Value = this.querySelector('input').value;
+
+      // Speichern des Werts im Session Storage
+      sessionStorage.setItem('selectedAnswer', Extra8Value);
+
+      // Weiterleiten zur nächsten Seite
+      window.location.href = '28Gehstduhin.html';
+    });
+  });
+});
+</script>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
