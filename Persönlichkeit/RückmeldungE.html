@@ -141,6 +141,17 @@ function calculateTotal() {
   });
 
   return total;
+function displayFeedback() {
+  // Berechnen Sie den Gesamtwert
+  const total = calculateTotal();
+
+  // Holen Sie den Feedback-Text basierend auf dem Gesamtwert
+  const feedbackText = getFeedback(total);
+
+  // Den Feedback-Text auf der Seite anzeigen
+  const feedbackElement = document.querySelector('#feedback');
+  feedbackElement.innerHTML = '<b>' + feedbackText + '</b>';
+}
 
 }
   </script>
