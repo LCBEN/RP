@@ -131,7 +131,7 @@ Bürger und Verwaltung im Blickfeld, aber auch verwaltungsspezifische Problemfel
 <br>
 <br>
 
-  <script>
+ <script>
 function calculateTotal() {
   let total = 0;
   const keys = [1, 4, 9, 11, 16, 21, 22, 28]; // Array mit den spezifischen Schlüsselnummern
@@ -141,9 +141,17 @@ function calculateTotal() {
   });
 
   return total;
-   </script>
- <div>
-   <script>
+}
+
+function getFeedback(total) {
+  if (total > 0) {
+    return "Was hier los";
+  } else {
+    return "Test";
+  }
+}
+
+
 function displayFeedback() {
   // Berechnen Sie den Gesamtwert
   const total = calculateTotal();
@@ -155,8 +163,12 @@ function displayFeedback() {
   const feedbackElement = document.querySelector('#feedback');
   feedbackElement.innerHTML = '<b>' + feedbackText + '</b>';
 }
+</script>
 
-}
+<div id="feedback"></div>
+<!-- Möglicherweise benötigen Sie einen Button oder ein Ereignis, um displayFeedback aufzurufen -->
+<button onclick="displayFeedback()">Ergebnis anzeigen</button>
+
   </script>
  </div>
  <button onclick="window.location.href = '09MoinundgutKick.html';"; style="width: 15%; background-color: #244897; color: white; font-weight: bold; 
