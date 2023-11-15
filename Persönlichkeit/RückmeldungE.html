@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>Teste dich - B.A. Public Administration</title>
+ <link rel="stylesheet" href="../Layout.css">
+</head>
+<body>
+
+
+<table style="width:100%; border-spacing: 0px;">
+
+<!-- Zeile 1 -->
+   <tr>   
+ <!-- Zeile 1, Spalte 1 -->
+   <td class= "spalte1">
+   </td>
+
+ <!-- Zeile 1, Spalte 2 -->
+    <td class="spalte2">
+    </td>
+
+ <!-- Zeile 1, Spalte 3 = Hintergrund -->
+    <td class="spalte3"> 
+
+<!-- Inhalt-->
+<div style="width:94%; height: 1300px;  overflow: auto; background-attachment: local;
+    vertical-align: top; 
+    padding-top: 2.25%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    margin-bottom: 3%;
+    border-spacing:0px; 
+    background-color: #EEEEEE;
+    font-family: Arial, san-serif;
+    font-size: clamp(8px, 1vw, 15px); 
+    position: relative;">
+
+<h1> Ende des ersten Semesters</h1>
+  Überblick über die absolvierten Module:
+
+<div style="height:1%; margin-top:1%;">
+
+  <button class="accordion">Expose der Bachelorthesis</button>
+    <div class="panel" style="font-family: Arial, san-serif;">Was wird gemacht?
+        <ul>
+  <li> Fragestellung ihrer Thesis finden </li>
+  <li> Thema in den Forschungszusammenhang einordnen </li>
+  <li> methodisches Vorgehen und Zeitplan  </li>
+  <li> schriftliche Ausarbeitung des Themas </li>
+  <li> Beratungs- und Abstimmungsgespräche </li>
+</ul>
+    </div>
+
+    <button class="accordion">Controlling</button>
+    <div class="panel">Was wird gemacht?
+        <ul>
+  <li> ausgewählte Controllinginstrumente (z. B. Balanced Scorecard, Portfolio, SWOT-Analyse, Berichtswesen)</li>
+  <li> Ziele und Aufgaben des Controllings </li>
+  <li> strategisches und operatives Controlling </li>
+ 
+</ul>
+    </div>
+
+ <button class="accordion">Wirtschaftspolitik</button>
+    <div class="panel">Was wird gemacht?
+        <ul>
+  <li> Ausgewählte Konzepte der Wirtschaftspolitik
+  <ol> 
+   <li> Geldpolitik </li>
+   <li> Finanzpolitik </li>
+   <li> Arbeitsmarkpolitik </li>
+   <li> Wettbewerbspolitik </li>
+   <li> Einkommenspolitik </li>
+   <li> Außenwirtschaftspolitik </li>
+   <li> Agrarpolitik </li>
+   <li> Bildungspolitik </li>
+   <li> Sozialpolitik </li>
+   <li> Umweltpolitik </li>
+  </ol></li>
+  <li> wirtschaftspolitische Instrumente </li>
+  <li> Fachwissen auf Fragen zur wirtschaftlcihen Enwicklung anwenden </li>
+</ul>
+    </div>
+
+ <button class="accordion">Wahlpflichtmodul 1 und 2</button>
+    <div class="panel">Was wird gemacht?
+     <ul>
+  <li> 
+Es sind zwei Teilmodule aus dem Angebot für den Wahlpflichtbereich „Recht und Soziale Sicherung“ zu wählen. Diese sind dem
+Bereich der Rechtswissenschaften einschließlich des Sozialrechts
+zugordnet. Es stehen juristische Entscheidungsprobleme aus verschiedenen Bereichen mit einem Bezug zum Berufsfeld der öffentlichen Verwaltung im Zentrum des Interesses. Hierzu gehören Fragen und Probleme des Verwaltungsrechts, Kommunalrechts und
+des Zivilrechts sowie die Gesamtheit der gesetzgeberischen sowie
+administrativen Maßnahmen des Staates, mittels derer sozialpolitische Zielsetzungen verwirklichen sollen. Aktuelle Herausforderungen, denen das System der sozialen Sicherung sowie auch der
+einzelne Bedienstete in den verschiedenen Feldern der Sozialverwaltung gegenüberstehen, sollen vertiefend behandelt werden. 
+      </li>
+ <li> 
+  Es sind vier Teilmodule aus dem Angebot für den Wahlpflichtbereich Soziales, Ökonomie, Politik und Verwaltungsinformatik zu wählen. In diesem Wahlpflichtbereich werden Problemstellungen verschiedenen Gesellschaftszusammenhängen aufgegriffen.
+Diese sind im Schwerpunkt den Bereichen Sozialwissenschaften
+Betriebs-, Volks- und Finanzwirtschaft, Politik und Verwaltungsinformatik zugeordnet. Es stehen u. a. Veränderungen im Verhältnis von
+Bürger und Verwaltung im Blickfeld, aber auch verwaltungsspezifische Problemfelder.
+  </li>
+    </div>
+
+
+ <button class="accordion">Praktikum 4 und 5</button>
+  
+
+
+ <button class="accordion">schrfitliche Thesis</button>
+    <div class="panel">Was wird gemacht?
+        <ul>
+ <li> Fragestellung und Präzisierung des Themas, Gliederung  </li>
+  <li> Materialsuche und -auswertung  </li>
+  <li>  methodisches Vorgehen  </li>
+  <li> Argumentation und Problemlösung </li>
+  <li> Ergebnispräsentation</li>
+</ul>
+    </div>
+
+ <button class="accordion">Kolloquium</button>
+    <div class="panel">Was wird gemacht?
+        <ul>
+  <li> Abschlussarbeit einem fachkundigen Publikum vorstellen</li>
+  <li> fachliche/methodische Fragen beantworten </li>
+  <li> kritischen Diskussion der Ergebnisse </li>
+</ul>
+    </div>
+
+    <script src="accordion.js"></script>
+<br>
+<br>
+
+  <script>
+function calculateTotal() {
+  let total = 0;
+    total = parseFloat(sessionStorage.getItem('selectedAnswer1' + i)) || 0;
+  
+  return total;
+}
+  </script>
+ <button onclick="window.location.href = '09MoinundgutKick.html';"; style="width: 15%; background-color: #244897; color: white; font-weight: bold; 
+    font-size: clamp(8px, 1vw, 15px); padding: 1%; display: block; margin: 0 auto; border: 1px solid; border-color: black; ">Weiter</button>
+ </div>
+
+<!-- Zeile 1, Spalte 4 -->
+<td class="spalte4">
+</td>
+ 
+</div> </tr>
+</body>
+</html
