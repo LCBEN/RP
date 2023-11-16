@@ -163,6 +163,9 @@ function displayFeedback() {
   const feedbackElement = document.querySelector('#feedback');
   feedbackElement.innerHTML = '<b>' + feedbackText + '</b>';
 }
+  document.addEventListener('DOMContentLoaded', function() {
+  displayFeedback();
+});
 </script>
 
 <div id="feedback"></div>
