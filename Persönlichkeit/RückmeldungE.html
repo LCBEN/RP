@@ -75,42 +75,7 @@ positiven Emotionen gegenüber anderen auch eher aus als weniger extravertierte 
 <p style="text-align:right;"> vollständige Literaturangaben sind im Literaturvereichnis auf der Startseite zu finden
 </div>
  
- <script>
-function calculateTotal() {
-  let total = 0;
-  const keys = [1, 4, 9, 11, 16, 21, 22, 28]; // Array mit den spezifischen Schlüsselnummern
-
-  keys.forEach(function(key) {
-    total += parseFloat(sessionStorage.getItem('selectedAnswer' + key)) || 0;
-  });
-
-  return total;
-}
-
-function getFeedback(total) {
-  if (total > 0) {
-    return "Was hier los";
-  } else {
-    return "Test";
-  }
-}
-
-
-function displayFeedback() {
-  // Berechnen Gesamtwert
-  const total = calculateTotal();
-
-  // Feedback-Text basierend auf dem Gesamtwert
-  const feedbackText = getFeedback(total);
-
-  // Den Feedback-Text auf der Seite anzeigen
-  const feedbackElement = document.querySelector('#feedback');
-  feedbackElement.innerHTML = '<b>' + feedbackText + '</b>';
-}
-  document.addEventListener('DOMContentLoaded', function() {
-  displayFeedback();
-});
-</script>
+ <script src="Feedback.js"></script>
  </div>
  <button onclick="window.location.href = '09MoinundgutKick.html';"; style="width: 15%; background-color: #244897; color: white; font-weight: bold; 
     font-size: clamp(8px, 1vw, 15px); padding: 1%; display: block; margin: 0 auto; border: 1px solid; border-color: black; ">Weiter</button>
