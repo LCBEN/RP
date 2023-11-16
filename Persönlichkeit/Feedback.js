@@ -27,7 +27,7 @@ function displayFeedback() {
 
   // Den Feedback-Text auf der Seite anzeigen
   const feedbackElement = document.querySelector('#feedback');
-  feedbackElement.innerHTML = '<b>' + feedbackText + '</b>';
+  feedbackElement.innerHTML ='feedbackText';
 }
   document.addEventListener('DOMContentLoaded', function() {
   displayFeedback();
