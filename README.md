@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Self-Assessment Tool for Dual Studies in Public Administration</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        h1 {
-            color: navy;
-        }
-        h2 {
-            color: darkblue;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
+
 </head>
 <body>
 
